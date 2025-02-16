@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Protest+Revolution&display=swap");
+
+body {
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c424bbb0-a0e6-4a95-b422-56f707c6e172/dj4tt2k-77765bab-6458-49bf-8a77-0328f48c20c0.jpg/v1/fill/w_1095,h_730,q_70,strp/abstract_painting_color_bricks___4k___2_by_gabimedia_dj4tt2k-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2M0MjRiYmIwLWEwZTYtNGE5NS1iNDIyLTU2ZjcwN2M2ZTE3MlwvZGo0dHQyay03Nzc2NWJhYi02NDU4LTQ5YmYtOGE3Ny0wMzI4ZjQ4YzIwYzAuanBnIiwiaGVpZ2h0IjoiPD04NTQiLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC9jNDI0YmJiMC1hMGU2LTRhOTUtYjQyMi01NmY3MDdjNmUxNzJcL2dhYmltZWRpYS00LnBuZyIsIm9wYWNpdHkiOjk1LCJwcm9wb3J0aW9ucyI6MC40NSwiZ3Jhdml0eSI6ImNlbnRlciJ9fQ.89O9wbl3W54BvVIVgAg5xCIexE1Z3zsmZdd3XHGl5SM");
+
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.6);
+  background-blend-mode: darken;
+}
+
+.game-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: black;
+}
+
+.square {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  padding-left: 5px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.square:hover {
+  transform: scale(1.05);
+}
+
+.matched {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+#welcometo {
+  text-align: center;
+  margin-right: 10px;
+  color: hsl(0, 83%, 57%);
+  text-shadow: 2px 2px 3px black;
+  font-family: "Bangers", serif;
+  font-size: 50px;
+}
+#color {
+  text-align: center;
+  margin-right: 10px;
+  color: hsl(241, 100%, 50%);
+  text-shadow: 2px 2px 3px black;
+  font-family: "Bangers", serif;
+  font-size: 50px;
+}
+#square {
+  text-align: center;
+  margin-right: 10px;
+  color: hsl(54, 100%, 50%);
+  text-shadow: 2px 2px 3px black;
+  font-family: "Bangers", serif;
+  font-size: 50px;
+}
+#matching {
+  text-align: center;
+  margin-right: 10px;
+  color: hsl(96, 100%, 50%);
+  text-shadow: 2px 2px 3px black;
+  font-family: "Bangers", serif;
+  font-size: 50px;
+}
+.Welcome {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.matching {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.instructions {
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 3px black;
+  font-family: "Protest Revolution", serif;
+  font-weight: 400;
+  font-style: normal;
+}
