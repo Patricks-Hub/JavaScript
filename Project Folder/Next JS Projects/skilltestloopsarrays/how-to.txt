@@ -1,0 +1,171 @@
+Got it. Here's the "how-to" document with a detailed breakdown of the `src/pages/index.js` sections.
+
+**How to Build Your Next.js Application**
+
+**1. Set Up Your Project:**
+
+   * **Open your terminal.**
+   * **Run this command:** `npx create-next-app@latest skilltestloopsarrays`
+   * **Answer the prompts:**
+        * TypeScript: `no`
+        * ESLint: `yes`
+        * Tailwind CSS: `no`
+        * `src/` directory: `yes`
+        * App Router: `no`
+        * Turbopack: `no`
+        * Import alias: `no`
+   * **Go to your project folder:** `cd skilltestloopsarrays`
+
+**2. Create Your Page Content (`src/pages/index.js`):**
+
+   * **Open `src/pages/index.js` in your code editor.**
+   * **Replace the existing code with this:**
+
+        ```javascript
+        import React, { useState } from 'react';
+
+        export default function Home() {
+          // Section 1: Data Arrays
+          const products = ["Garden Trowel", "Yard Spade", "Planting Spade"];
+          const productNumber = ["gt200", "yard-1", "plant-4"];
+          const selectionFactors = ["Price", "Quality", "Reviews", "Pictures"];
+          const references = ["Field and Stream", "Home and Garden", "Plant Life"];
+
+          // Section 2: State Management
+          const [selectedProduct, setSelectedProduct] = useState('');
+          const [selectedFactor, setSelectedFactor] = useState('');
+          const [selectedReferences, setSelectedReferences] = useState([]);
+
+          // Section 3: Event Handlers
+          const handleProductChange = (e) => {
+            setSelectedProduct(e.target.value);
+          };
+
+          const handleFactorChange = (e) => {
+            setSelectedFactor(e.target.value);
+          };
+
+          const handleReferenceChange = (e) => {
+            const value = e.target.value;
+            if (e.target.checked) {
+              setSelectedReferences((prev) => [...prev, value]);
+            } else {
+              setSelectedReferences((prev) => prev.filter((item) => item !== value));
+            }
+          };
+
+          const handleSubmit = (e) => {
+            e.preventDefault();
+            console.log('Selected Product:', selectedProduct);
+            console.log('Selected Factor:', selectedFactor);
+            console.log('Selected References:', selectedReferences);
+          };
+
+          // Section 4: JSX Rendering
+          return (
+            <div>
+              <h1>WDV221 Intro Javascript</h1>
+              <h2>Skill Test - Loops and Arrays</h2>
+              <form onSubmit={handleSubmit}>
+                <fieldset>
+                  <label>
+                    1. Which product did you purchase?
+                    <select
+                      value={selectedProduct}
+                      onChange={handleProductChange}
+                    >
+                      <option value="">Select a product</option>
+                      {products.map((product, index) => (
+                        <option key={productNumber[index]} value={productNumber[index]}>
+                          {product}
+                        </option>
+                      ))}
+                    </select>
+                    <br />
+                    <br />
+                    2. Please choose the primary factor in why you purchased our product:
+                    <br />
+                    {selectionFactors.map((factor) => (
+                      <label key={factor}>
+                        <input
+                          type="radio"
+                          name="selectionFactor"
+                          value={factor}
+                          checked={selectedFactor === factor}
+                          onChange={handleFactorChange}
+                        />
+                        {factor}
+                        <br />
+                      </label>
+                    ))}
+                    <br />
+                    3. How did your hear about us? Please select all that apply:
+                    <br />
+                    {references.map((reference) => (
+                      <label key={reference}>
+                        <input
+                          type="checkbox"
+                          value={reference}
+                          checked={selectedReferences.includes(reference)}
+                          onChange={handleReferenceChange}
+                        />
+                        {reference}
+                        <br />
+                      </label>
+                    ))}
+                  </label>
+                  <input type="submit" value="Submit" />
+                  <input type="reset" value="Reset" />
+                  <br />
+                </fieldset>
+              </form>
+              <h3>Instructions:</h3>
+              <p>
+                1. Use the products array and the productNumber array to dynamically
+                populate the select menu. Include the productNumbers as value attributes.
+              </p>
+              <p>
+                2. Use the selectionFactors array to dynamically create a set of radio
+                buttons.
+              </p>
+              <p>
+                3. Use the references array to dynamically create a set of check boxes.
+              </p>
+              <p>&nbsp;</p>
+            </div>
+          );
+        }
+        ```
+
+   * **Detailed Breakdown:**
+
+     * **Section 1: Data Arrays:**
+       * `products`, `productNumber`, `selectionFactors`, and `references` arrays store the data used to populate the form elements.
+
+     * **Section 2: State Management:**
+       * `useState` is used to create state variables:
+         * `selectedProduct`: Stores the selected product from the dropdown.
+         * `selectedFactor`: Stores the selected purchase factor from the radio buttons.
+         * `selectedReferences`: Stores an array of selected references from the checkboxes.
+
+     * **Section 3: Event Handlers:**
+       * `handleProductChange`, `handleFactorChange`, and `handleReferenceChange` are event handlers that update the state when the user interacts with the form elements.
+       * `handleSubmit` logs the selected values to the console when the form is submitted.
+
+     * **Section 4: JSX Rendering:**
+       * The `return` statement returns the JSX that defines the structure of the page.
+       * `map` functions are used to dynamically generate the `option` elements for the dropdown, radio buttons, and checkboxes based on the data arrays.
+       * Form element state is managed by the value attribute, and the onChange event is used to update the state.
+       * The `onSubmit` event is used to call the handleSubmit function.
+
+**3. Run Your Application:**
+
+   * **In your terminal, run:** `npm run dev`
+   * **Open your web browser and go to:** `http://localhost:3000`
+
+**4. Interact with the Page:**
+
+   * Use the dropdown to select a product.
+   * Use the radio buttons to select a purchase factor.
+   * Use the checkboxes to select references.
+   * Click "Submit" to see the results in your browser's console.

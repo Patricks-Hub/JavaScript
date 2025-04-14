@@ -1,0 +1,84 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Michael Scott",
+      "bio": "I became a salesman because of people. I love making friends. But then I was promoted to manager at a very young age. And I still try to be a friend first. But, you know... when you're very successful, your co-workers look at you differently.",
+      "email": "michael.s@employeehub.com",
+      "role": "Manager",
+      "photoUrl": "https://4.bp.blogspot.com/-vUTCm6TG4-0/XEBvowST6wI/AAAAAAABA9A/AVdeXIEIA34vOzTITsuZTFR1D7lvbaZVACLcBGAs/s1600/Space%2BForce.jpgs"
+    },
+    {
+      "id": 2,
+      "name": "Dwight K. Schrute-Beetfarmer",
+      "bio": "Assistant Regional Dream Facilitator (self-proclaimed). Expert in beet-related productivity hacks and emergency preparedness (mostly involving bears). Owns and operates Schrute Farms Bed and Beets.",
+      "email": "dwight.kb@employeehub.com",
+      "role": "Assistant Regional Dream Facilitator",
+      "photoUrl": "https://openpsychometrics.org/tests/characters/test-resources/pics/TO/2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Pam Beesly-Halpert",
+      "bio": "Office Administrator and secretly talented artist. The calm in the storm. Known for her witty observations and ability to mediate even the most bizarre workplace disputes.",
+      "email": "pam.bh@employeehub.com",
+      "role": "Office Harmony Coordinator",
+      "photoUrl": "https://openpsychometrics.org/tests/characters/test-resources/pics/TO/4.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Stanley Hudson (Pretzel Enthusiast)",
+      "bio": "Sales representative with a deep and abiding love for Pretzel Day. Can often be found doing crossword puzzles or counting down the minutes until retirement. His motivational speeches are legendary (in their brevity).",
+      "email": "stanley.h@employeehub.com",
+      "role": "Senior Sales (Reluctant)",
+      "photoUrl": "https://static1.wikia.nocookie.net/__cb20090312202638/theoffice/images/7/73/2009StanleyCropped.PNG"
+    },
+    {
+      "id": 5,
+      "name": "Phyllis Vance (Knit Wit)",
+      "bio": "Sweet and kind sales representative with a passion for knitting and her husband, Bob Vance of Vance Refrigeration. Easily flustered by office shenanigans but always has a kind word (and sometimes a homemade scarf).",
+      "email": "phyllis.v@employeehub.com",
+      "role": "Sales (Knitwear Division)",
+      "photoUrl": "https://img.nbc.com/files/images/2013/11/12/phyllis-500x500.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Oscar Martinez (Fact Checker Extraordinaire)",
+      "bio": "The resident voice of reason and logic. Patiently corrects Michael's numerous factual inaccuracies. Secretly enjoys the office chaos, as it provides ample material for his dry wit.",
+      "email": "oscar.m@employeehub.com",
+      "role": "Head of Numbers and Nuance",
+      "photoUrl": "https://vignette3.wikia.nocookie.net/theoffice/images/d/d1/2009OscarCropped.PNG/revision/latest?cb=20090312203042"
+    },
+    {
+      "id": 7,
+      "name": "Kevin Malone (Chili Connoisseur)",
+      "bio": "Lovable and slightly clueless accountant with a profound love for food, especially his famous (and sometimes disastrous) chili. His mathematical skills are... unique.",
+      "email": "kevin.m@employeehub.com",
+      "role": "Numbers Wrangler (with Snacks)",
+      "photoUrl": "https://i.pinimg.com/originals/6d/e5/1d/6de51dad7bfca38ab86cea29b374a6a8.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Angela Martin (Feline Fanatic)",
+      "bio": "Stern and by-the-book Senior Accountant with a secret soft spot for her numerous cats. Her disapproval is legendary, and her organizational skills are unmatched (especially when it comes to spreadsheets).",
+      "email": "angela.m@employeehub.com",
+      "role": "Chief Compliance Officer (and Cat Guardian)",
+      "photoUrl": "https://www.sitcomsonline.com/photopost/data/1206/the-office-angela-kinsey-2.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Andy Bernard (Nard Dog)",
+      "bio": "Enthusiastic (sometimes overly so) Sales Representative with a penchant for a cappella and sharing his alma mater's traditions. His catchphrases are... memorable.",
+      "email": "andy.b@employeehub.com",
+      "role": "Sales and Songsmith",
+      "photoUrl": "https://akns-images.eonline.com/eol_images/Entire_Site/2020023/rs_600x600-200123145928-office1.jpg?fit=around%7C1080:1080&output-quality=90&crop=1080:1080;center,top"
+    },
+    {
+      "id": 10,
+      "name": "Creed Bratton (Mystery Man)",
+      "bio": "The office's enigmatic and ageless quality assurance representative. His past is shrouded in mystery, and his daily activities are... unconventional. Nobody is quite sure what he does, but he's been here forever.",
+      "email": "creed.b@employeehub.com",
+      "role": "Quality Assurance (and Occasional Squirrel Feeder)",
+      "photoUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fvignette3.wikia.nocookie.net%2Ftheoffice%2Fimages%2F2%2F20%2F2009Creed.jpg%2Frevision%2Flatest%3Fcb%3D20090312193628&f=1&nofb=1&ipt=043fd5b267025c395d2d8b7467c94f72f785c3e3535eea99a922ba51624c6e82"
+    }
+  ]
+}

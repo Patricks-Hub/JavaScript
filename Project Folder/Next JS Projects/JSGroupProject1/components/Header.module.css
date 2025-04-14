@@ -1,0 +1,14 @@
+.header {
+  background-image: url("https://vignette.wikia.nocookie.net/theoffice/images/2/2d/Dunder_Mifflin%2C_Inc_Long.jpg/revision/latest?cb=20180717195405");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: rgba(2, 4, 30, 0.454);
+  border-bottom: 3px solid #ccc;
+  border-radius: 10px;
+  height: 250px;
+  text-align: center;
+  font-size: xx-large;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+}

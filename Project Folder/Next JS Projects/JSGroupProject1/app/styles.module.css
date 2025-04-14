@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: ;
+  gap: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  gap: 15px;
+}
+
+.searchInput {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  flex-grow: 1;
+  width: auto;
+}
+
+.filterControls {
+  display: flex;
+  align-items: center;
+  flex-grow: 0.5;
+  width: auto;
+}
+
+.filterControls label {
+  margin-right: 10px;
+}
+
+.filterControls select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  flex-grow: 1;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  flex-grow: 1;
+}
